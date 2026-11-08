@@ -1,118 +1,93 @@
 # Sydney Business Web
 
-**Sydney Business Web (SBW)** is an engineering-led web development and AI Visibility business based in Thornton, NSW, Australia.
+**Sydney Business Web (SBW)** is an engineering-led web development and AI Visibility business based in Thornton, New South Wales, Australia.
 
-We design and develop websites, structured-data systems, entity architectures and technical infrastructure intended to make businesses easier for search and AI systems to retrieve, identify and understand accurately.
+We design and engineer websites, structured-data systems, entity architectures, APIs and technical infrastructure that help search and AI systems retrieve business information and identify businesses accurately.
 
-Official website:
-https://sydneybusinessweb.com.au/
+**Official website:** https://sydneybusinessweb.com.au/
 
 ## AI Visibility Engineering
 
-Sydney Business Web develops technical systems for investigating different layers of AI Visibility.
+We distinguish the different technical questions involved in AI Visibility:
 
-Our work distinguishes between questions such as:
+- **Retrieval:** Are recognised AI and search systems requesting useful website content, and are those requests succeeding?
+- **Entity structure:** Are the business, website, people, services, locations and identifiers consistently connected?
+- **Identity assessment:** Are important relationships clear, and which claims or connections need stronger evidence or correction?
+- **Page-level checks:** Can a single page expose a useful connected machine-readable identity?
+- **Downstream outcomes:** Is the business actually represented, cited or recommended in AI-generated answers? Those outcomes require separate evidence.
 
-* Can recognised AI and search systems retrieve the website?
-* What business information are those systems retrieving?
-* Does the website expose a coherent machine-readable business identity?
-* Are business entities, services, people, locations and evidence connected consistently?
-* Is there observable evidence that the business is subsequently represented, cited or selected in AI-generated answers?
-
-Two proprietary systems form important parts of this work.
+The following systems address distinct parts of this work. They are **not interchangeable products**.
 
 ## AI Observatory
 
-**AI Observatory** is a retrieval-monitoring and evidence system designed to measure and qualify access to websites by recognised AI and search crawler systems.
+**AI Observatory** is a managed, server-side retrieval-monitoring system for qualified AI and search crawler activity.
 
-Its architecture includes:
+Its engineering includes network-edge or server-log collection, crawler-identity corroboration, request and response classification, filtering and reporting. The resulting evidence helps establish which recognised machines requested business information and whether qualifying retrievals succeeded.
 
-* Cloudflare edge telemetry;
-* crawler and request classification;
-* qualification and false-positive filtering;
-* resource and retrieval-state classification;
-* Cloudflare Analytics Engine telemetry storage;
-* independent reporting logic;
-* rolling retrieval evidence.
+**Measurement boundary:** Retrieval evidence does not, by itself, prove AI understanding, citation, recommendation or endorsement.
 
-AI Observatory maintains an explicit measurement boundary:
-
-**retrieval evidence does not by itself prove AI understanding, recommendation, citation or endorsement.**
-
-Technical documentation:
-https://github.com/Sydney-Business-Web/ai-observatory
-
-Product information:
-https://sydneybusinessweb.com.au/ai-observatory-verified-ai-retrieval-monitoring/
+- [Product information](https://sydneybusinessweb.com.au/ai-observatory/)
+- [Public technical documentation](https://github.com/Sydney-Business-Web/ai-observatory)
+- [Zenodo record](https://zenodo.org/records/22850808)
+- [Earlier archived technical release — v1.0.0](https://doi.org/10.5281/zenodo.22040578)
 
 ## Schema Gorilla
 
-**Schema Gorilla** is a whole-site entity and structured-data analysis system.
+**Schema Gorilla** examines a website's connected, machine-readable entity and structured-data representation across the whole site rather than validating each page in isolation.
 
-Rather than treating schema as isolated markup on individual pages, Schema Gorilla examines the connected machine-readable representation of the business across the website.
+Its analysis considers entity identifiers and relationships, graph coherence, competing or fragmented representations, structured-data consistency and the links between business, people, services and other entities.
 
-Analysis can include:
+**Engineering boundary:** A coherent graph is valuable structural evidence, but valid schema alone cannot guarantee AI retrieval or recommendation.
 
-* entity discovery;
-* identifier normalisation;
-* relationship mapping;
-* graph coherence;
-* structured-data consistency;
-* visible-content alignment;
-* business identity gaps;
-* external corroborating evidence.
+- [Product information](https://sydneybusinessweb.com.au/schema-gorilla-business-identity-analysis-for-ai/)
+- [Public technical documentation](https://github.com/Sydney-Business-Web/schema-gorilla)
+- [Zenodo technical release](https://zenodo.org/records/22040501)
 
-The objective is not simply valid schema.
+## AI Identity Diagnostic
 
-The objective is a **coherent machine-readable business identity**.
+**AI Identity Diagnostic** interprets structured evidence to assess how clearly a website identifies its business and related entities. It examines unresolved or competing identities, missing relationships, and where corroborating information or remediation is needed.
 
-Technical documentation:
-https://github.com/Sydney-Business-Web/schema-gorilla
+It complements Schema Gorilla's whole-site analysis. The diagnostic does not, by itself, prove inclusion in AI answers or recommendations.
 
-Product information:
-https://sydneybusinessweb.com.au/schema-gorilla-business-identity-analysis-for-ai/
+- [Service information](https://sydneybusinessweb.com.au/ai-visibility-analysis/)
+- [Zenodo record](https://zenodo.org/records/22119042)
 
-## How the Systems Relate
+## AI Baby Gorilla
 
-AI Observatory and Schema Gorilla address different technical layers.
+**AI Baby Gorilla** is a free, single-page structured-data connectivity checker. It gives users an accessible way to inspect whether key entities and relationships on a public web page are connected, partially connected or fragmented.
 
-**AI Observatory:**
-Are recognised machines retrieving the business evidence?
+The public tool is deliberately limited to one page; it is not a whole-site assessment. Its access-controlled API can also support authorised, automated agent workflows.
 
-**Schema Gorilla:**
-Does that evidence form a coherent machine-readable representation of the business?
+- [Free public tool](https://sydneybusinessweb.com.au/ai-baby-gorilla/)
+- [Public technical documentation](https://github.com/Sydney-Business-Web/ai-baby-gorilla)
+- [Zenodo record](https://zenodo.org/records/22288382)
 
-A simplified engineering model is:
+## How the Systems Fit Together
 
-**retrieval → machine-readable identity → AI Visibility assessment**
+**Observe retrieval → analyse whole-site structure → assess business identity → remediate and verify.**
 
-Neither system claims that retrieval or structured data alone guarantees recommendation by an external AI system.
+AI Baby Gorilla provides a separate, limited one-page entry point. None of the systems claims that technical readiness alone guarantees citation, recommendation or other downstream outcomes from third-party AI services.
 
 ## Technical Leadership
 
-Technical architecture and development are led by **Keith Rowley — Co-Owner & Lead Engineer, Sydney Business Web**.
+Technical architecture and development are led by **[Keith Rowley](https://github.com/KeithRowley)**, Founder & Lead Engineer, Sydney Business Web.
 
-Sydney Business Web combines web development, structured data, entity architecture, APIs, server-level engineering and retrieval measurement as part of its broader AI Visibility work.
+- [Professional profile](https://sydneybusinessweb.com.au/business-team/)
+- [ORCID](https://orcid.org/0009-0004-9341-7979)
+- [LinkedIn](https://www.linkedin.com/in/sydneybusinessweb/)
 
-## Public Technical Documentation
+## Public Documentation and Intellectual Property
 
-These GitHub repositories provide public technical documentation for transparency, technical reference and consistent identification of Sydney Business Web systems.
+Public GitHub repositories document selected architecture, measurement boundaries, methodology and technical references. Production source code, proprietary qualification logic, graph-processing algorithms and commercial implementation remain private unless explicitly released.
 
-Production source code, proprietary qualification logic, graph-processing algorithms and commercial implementation methods remain private unless explicitly published.
+Zenodo records provide persistent archival references for the technical materials listed above. The presence of a public documentation repository does **not** imply that the corresponding production system is open source.
 
 ## More Information
 
-AI Visibility Services:
-https://sydneybusinessweb.com.au/ai-visibility-services-and-pricing/
-
-AI Retrieval Evidence:
-https://sydneybusinessweb.com.au/ai-retrieval-evidence/
-
-Sydney Business Web:
-https://sydneybusinessweb.com.au/
+- [AI Visibility services and pricing](https://sydneybusinessweb.com.au/ai-visibility-services-and-pricing/)
+- [AI retrieval evidence](https://sydneybusinessweb.com.au/ai-retrieval-evidence/)
+- [Sydney Business Web website](https://sydneybusinessweb.com.au/)
 
 ---
-
-**AI Observatory and Schema Gorilla are proprietary systems developed by Sydney Business Web.**
 
 © Sydney Business Web. All rights reserved.
